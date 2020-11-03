@@ -1,4 +1,4 @@
-package com.ironclad.agenda
+package com.ironclad.agenda.view.activities
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import androidx.databinding.DataBindingUtil
+import com.ironclad.agenda.R
 import com.ironclad.agenda.databinding.ActivitySplashBinding
 import com.ironclad.agenda.utils.Constants
 import com.ironclad.agenda.utils.SharedPreferenceHelper

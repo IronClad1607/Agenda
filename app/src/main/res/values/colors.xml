@@ -9,4 +9,5 @@
     <color name="white">#F9f9f9</color>
     <color name="splashBack">#3f72af</color>
     <color name="topBar">#112d4e</color>
+    <color name="colorAccent">#ffb400</color>
 </resources>
