@@ -58,7 +58,7 @@
             android:background="@color/colorAccent"
             android:backgroundTint="@color/colorAccent"
             android:contentDescription="@string/todo"
-            android:elevation="2dp"
+            android:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/baseline_navigate_next_black_48" />
