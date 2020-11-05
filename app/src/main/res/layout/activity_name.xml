@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ironclad.agenda.view.viewmodel.NameActivityViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,10 +45,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/name"
-                android:inputType="textPersonName"
+                android:inputType="textCapWords"
+                android:text="@={viewModel.name}"
                 android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/baseline_add_black_48" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
