@@ -16,7 +16,6 @@ class HomeActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home)
         val sharedPreferences =
             getSharedPreferences(SharedPreferenceHelper.spFirstTime, Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
         val name = sharedPreferences.getString(SharedPreferenceHelper.keyName, "")
         binding.tvName.text = name
     }

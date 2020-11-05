@@ -60,7 +60,7 @@
             android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/baseline_add_black_48" />
+            app:srcCompat="@drawable/baseline_navigate_next_black_48" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
