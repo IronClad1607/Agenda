@@ -29,7 +29,6 @@
             android:layout_marginTop="50dp"
             android:textColorHint="@color/white"
             app:boxStrokeColor="@color/white"
-            app:boxStrokeWidth="2dp"
             app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +37,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/splashBack"
-                android:backgroundTint="@color/splashBack"
                 android:hint="@string/name"
                 android:inputType="textPersonName"
                 android:textColor="@color/white" />
