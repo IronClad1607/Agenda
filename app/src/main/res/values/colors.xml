@@ -10,4 +10,5 @@
     <color name="splashBack">#3f72af</color>
     <color name="topBar">#112d4e</color>
     <color name="colorAccent">#ffb400</color>
+    <color name="colorTrack">#cfa33c</color>
 </resources>

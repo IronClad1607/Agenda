@@ -17,6 +17,7 @@ class NameActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityNameBinding
     private lateinit var viewModel: NameActivityViewModel
+    private var wantBiometric = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,11 +30,15 @@ class NameActivity : AppCompatActivity() {
             getSharedPreferences(SharedPreferenceHelper.spFirstTime, Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
 
+        binding.switchBiometric.setOnCheckedChangeListener { buttonView, isChecked ->
+            wantBiometric = isChecked
+        }
 
         binding.btnNext.setOnClickListener {
             val name = viewModel.name.value!!
             if (name.isNotEmpty()) {
                 editor.putString(SharedPreferenceHelper.keyName, name)
+                editor.putBoolean(SharedPreferenceHelper.keyBiometric, wantBiometric)
                 editor.apply()
 
                 val homeIntent = Intent(this, HomeActivity::class.java)

@@ -5,5 +5,6 @@ class SharedPreferenceHelper {
         const val spFirstTime = "FirstTimeSharedPreference"
         const val keyIsFirstTime = "isFirstTime"
         const val keyName = "nameKey"
+        const val keyBiometric = "biometricKey"
     }
 }

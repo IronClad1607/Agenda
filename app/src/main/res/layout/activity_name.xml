@@ -74,6 +74,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchBiometric"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -81,7 +82,6 @@
             android:padding="10dp"
             android:text="@string/do_you_want_biometric_security"
             android:textColor="@color/white"
-            app:trackTint="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="@id/rightGuideline"
             app:layout_constraintStart_toStartOf="@id/leftGuideline"
             app:layout_constraintTop_toBottomOf="@id/etName"
