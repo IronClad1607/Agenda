@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.ironclad.agenda.R
@@ -31,11 +32,15 @@ class NameActivity : AppCompatActivity() {
 
         binding.btnNext.setOnClickListener {
             val name = viewModel.name.value!!
-            editor.putString(SharedPreferenceHelper.keyName, name)
-            editor.apply()
+            if (name.isNotEmpty()) {
+                editor.putString(SharedPreferenceHelper.keyName, name)
+                editor.apply()
 
-            val homeIntent = Intent(this,HomeActivity::class.java)
-            startActivity(homeIntent)
+                val homeIntent = Intent(this, HomeActivity::class.java)
+                startActivity(homeIntent)
+            } else {
+                Toast.makeText(this, "Please Enter Name!", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
