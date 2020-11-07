@@ -27,4 +27,20 @@ class TaskDataSource(private val taskDao: TaskDao) {
             taskDao.finishATask(taskId)
         }
     }
+
+    suspend fun deleteATask(taskId: Long) {
+        CoroutineScope(Dispatchers.IO).launch {
+            taskDao.deleteATask(taskId)
+        }
+    }
+
+    suspend fun getFinishedTask(): List<Task> {
+        return taskDao.getFinishedTask()
+    }
+
+    suspend fun unFinishedTask(taskId: Long) {
+        CoroutineScope(Dispatchers.IO).launch {
+            taskDao.unFinishATask(taskId)
+        }
+    }
 }
