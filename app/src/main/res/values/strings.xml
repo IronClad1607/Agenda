@@ -3,4 +3,6 @@
     <string name="todo">TODO</string>
     <string name="name">Name ...</string>
     <string name="do_you_want_biometric_security">Do you want Biometric Security ?</string>
+    <string name="account_and_settings">Account and Settings</string>
+    <string name="search">Search</string>
 </resources>
