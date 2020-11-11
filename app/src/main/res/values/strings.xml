@@ -5,4 +5,6 @@
     <string name="do_you_want_biometric_security">Do you want Biometric Security ?</string>
     <string name="account_and_settings">Account and Settings</string>
     <string name="search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
