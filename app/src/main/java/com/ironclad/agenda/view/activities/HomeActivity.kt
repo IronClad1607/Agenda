@@ -18,6 +18,6 @@ class HomeActivity : AppCompatActivity() {
             getSharedPreferences(SharedPreferenceHelper.spFirstTime, Context.MODE_PRIVATE)
         val name = sharedPreferences.getString(SharedPreferenceHelper.keyName, "")
         val wantBiometric = sharedPreferences.getBoolean(SharedPreferenceHelper.keyBiometric, false)
-        binding.tvName.text = "Name: $name Biometric:$wantBiometric"
+//        binding.tvName.text = "Name: $name Biometric:$wantBiometric"
     }
 }
