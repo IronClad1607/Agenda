@@ -8,4 +8,6 @@
     <string name="account_fragment">Account Fragment</string>
     <string name="new_task_fragment">New Task Fragment</string>
     <string name="home_fragment">Home Fragment</string>
+    <string name="account_and_settings">Account and Settings</string>
+    <string name="search">Search</string>
 </resources>
