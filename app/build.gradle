@@ -64,6 +64,6 @@ dependencies {
 
     //Dagger
     implementation 'com.google.dagger:dagger:2.30.1'
-    kapt 'com.google.dagger:dagger-compiler:2.30.1'
+    kapt 'com.google.dagger:dagger-compiler:2.31.2'
 
 }
