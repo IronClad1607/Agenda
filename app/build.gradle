@@ -60,7 +60,7 @@ dependencies {
     implementation "androidx.room:room-ktx:2.2.6"
 
     //Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2-native-mt'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3-native-mt'
 
     //Dagger
     kapt 'com.google.dagger:dagger-compiler:2.35.1'
